@@ -1,0 +1,186 @@
+@import "../../App.scss";
+
+.timeline-section {
+    background: linear-gradient(180deg, #111132, #0c0c1d);
+    padding: 14px 15px;
+
+   
+
+    .heading{
+        text-align: center;
+        font-size: 65px;
+        font-weight: bold;
+        color: #FFA500;
+        margin-bottom: 5px;
+
+        @include tablet{
+          font-size: 45px;
+        }
+
+        @include mobile{
+          font-size: 35px;
+        }
+    }
+  
+  
+    .timeline-items {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+
+     
+  
+      &::before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background-color: #663399;
+        left: calc(50% - 1px);
+
+        @include tablet{
+          left: 70px;
+        }
+
+        @include mobile{
+          left: 10px;
+        }
+      }
+    }
+  
+    .timeline-item {
+      margin-bottom: 0;
+      width: 100%;
+      padding: 5px;
+      position: relative;
+
+      @include tablet{
+        transform: none !important;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+     }
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      &:nth-child(odd) {
+        padding-right: calc(50% + 30px);
+        text-align: right;
+  
+        @include tablet{
+          padding-left: 100px;
+          padding-right: 0;
+          text-align: left;
+          width: 80%;
+        }
+        @include mobile{
+          padding-left: 37px;
+        }
+      }
+  
+      &:nth-child(even) {
+        padding-left: calc(50% + 30px);
+
+        @include tablet{
+          padding-left: 100px;
+          padding-right: 0;
+          text-align: left;
+          width: 80%;
+        }
+  
+        @include mobile{
+          padding-left: 37px;
+        }
+      }
+  
+      .timeline-dot {
+        height: 21px;
+        width: 21px;
+        background-color: #663399;
+        box-shadow: 0 0 25px #663399;
+        position: absolute;
+        left: calc(50% - 10px);
+        border-radius: 50%;
+        top: 10px;
+
+        @include tablet{
+          left: 62px;
+        }
+  
+        @include mobile{
+          left: 0;
+        }
+      }
+  
+      .timeline-date {
+        font-size: 20px;
+        font-weight: 800;
+        color: #d3d3d3;
+        margin: 6px 0 15px;
+      }
+  
+      .timeline-content {
+        background-color: #161633;
+        backdrop-filter: blur(20px);
+        border: 2px solid #663399;
+        box-shadow: 0 0 10px #663399;
+        padding: 30px;
+        border-radius: 1em;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+
+        @include tablet {
+          padding: 10px;
+        }
+  
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 25px #663399;
+        }
+  
+        h3 {
+          font-size: 20px;
+          color: #d3d3d3;
+          margin: 0 0 10px;
+          text-transform: capitalize;
+          font-weight: 800;
+
+          @include tablet {
+            font-size: 18px;
+          }
+        }
+  
+        p {
+          color: #d3d3d3;
+          opacity: 0.8;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 22px;
+          @include tablet {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  
+    @include mobile{
+      .timeline-items::before {
+        left: 7px;
+      }
+  
+      .timeline-dot {
+        left: 0;
+      }
+    }
+  
+    @media (max-width: 320px) {
+      .heading {
+        font-size: 7rem;
+      }
+    }
+  }
+  
