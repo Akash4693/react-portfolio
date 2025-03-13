@@ -49,15 +49,17 @@ const Desc = styled.div`
 
 const SkillsContainer = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
-  gap: 50px;
-  justify-content: center;
+  gap: 20px;
+  justify-content: space-evenly;
 `;
+// align-items: flex-start;
 const Skill = styled.div`
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   background-color: rgba(17, 25, 40, 0.83);
   border: 1px solid rgba(255, 255, 255, 0.125);
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
@@ -65,7 +67,7 @@ const Skill = styled.div`
   padding: 18px 36px;
 
   @media (max-width: 768px) {
-    max-width: 400px;
+    max-width: 500px;
     padding: 10px 36px;
   }
 
@@ -74,6 +76,27 @@ const Skill = styled.div`
     padding: 10px 36px;
   }
 `;
+// const Skill = styled.div`
+//   width: calc(100% - 20px); /* Adjust width to allow 2 in a row */
+//   max-width: 700px; /* Increase width */
+//   background-color: rgba(17, 25, 40, 0.83);
+//   border: 1px solid rgba(255, 255, 255, 0.125);
+//   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+//   border-radius: 16px;
+//   padding: 20px 40px; /* Increase padding */
+//   height: auto; /* Allow flexible height */
+
+//   @media (max-width: 768px) {
+//     width: 100%; /* Full width on small screens */
+//     max-width: 400px;
+//     padding: 15px 30px;
+//   }
+
+//   @media (max-width: 500px) {
+//     max-width: 330px;
+//     padding: 12px 24px;
+//   }
+// `;
 
 const SkillTitle = styled.div`
   font-size: 28px;
@@ -88,7 +111,7 @@ const SkillList = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 const SkillItem = styled.div`
   font-size: 16px;
@@ -128,7 +151,7 @@ const Skills = () => {
           }}
         >
           Here are some of my skills on which I have been working on for the
-          past 6 months.
+          past years.
         </Desc>
 
         <SkillsContainer>

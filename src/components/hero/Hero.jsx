@@ -59,10 +59,10 @@ const Hero = () => {
     <div className="hero">
         <div className="wrapper">
         <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
-            <motion.h2 variants={textVariants}>Akhil Babu S</motion.h2>
+            <motion.h2 variants={textVariants}>Akash Babu</motion.h2>
             <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
             <motion.div variants={textVariants} className="buttons">
-                <motion.a variants={textVariants} href="/Akhil_Babu_S_Java_Resume.pdf" download={"Akhil_Babu_S_Java_Resume.pdf"}>Download CV</motion.a>
+                <motion.a variants={textVariants} href="/Akash_CV.pdf" download={"Akash_CV.pdf"}>Download CV</motion.a>
                 <motion.a href="#Contact" variants={textVariants}>Contact Me</motion.a>
             </motion.div>
             <motion.img src="/scroll.png" alt="" variants={textVariants} animate="scrollButton"/>
@@ -74,7 +74,7 @@ const Hero = () => {
         
               <motion.div className="imageContainer">
                 <Tilt>
-                  <Img src="/hero.png" alt="Akhil Babu S" />
+                  <Img src="/Profile.jpg" alt="Akash Babu" />
                 </Tilt>
               </motion.div>
         

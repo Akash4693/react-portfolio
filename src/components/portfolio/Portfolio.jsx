@@ -5,49 +5,39 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "InkWell Chronicles Blog website - Full Stack",
-    img: "/blog.png",
-    link: "https://github.com/Akhilbabu456/java_springboot_mastery/tree/main/java_springboot_blog",
-    desc: `I have developed InkWell Chronicles, a blog project featuring both admin and user interfaces. The admin interface offers complete control over posts, users, and comments, while the user interface enables users to sign up using their emails, with verification through Google Authentication OAuth 2.0. Users can view, search, and comment on posts, with control limited to their respective blogs.`,
+    title: " Plura- Multivendor B2B2B SaaS Website Builder CRM",
+    img: "/plura.png",
+    link: "https://github.com/Akash4693/plura",
+    desc: `Developed a multi-vendor CRM with unlimited funnel hosting, role-based access, and sub-account management. Built a drag-and-drop website and funnel builder, Kanban-based project management, and a custom state management system for real-time updates. Integrated Stripe Connect for subscriptions, product sync, and automated revenue sharing. Designed a branded Stripe checkout and real-time analytics dashboards for enhanced UX.`,
   },
   {
     id: 2,
-    title: "Recipe app - Recipe shareing platform ",
-    img: "/recipe.png",
-    link: "https://github.com/Akhilbabu456/recipe_app_springboot",
-    desc: `User developed a recipe sharing application using Angular, JavaScript, Tailwind CSS, SCSS, HTML, Cloudinary, Material UI, MySQL, Spring Boot, Java, JPA, and Spring Security. The project enables users to share and discover recipes, leveraging Cloudinary for image management, Material UI for UI components, and Spring Boot with Spring Security for backend services and authentication. `,
+    title: " TradeX- Multi Vendor E-commerce platform",
+    img: "/TradeX.png",
+    link: "https://github.com/Akash4693/TradeX-frontend",
+    desc: `TradeX is a scalable multi-vendor B2C e-commerce platform with real-time chat, seamless Stripe payments, advanced inventory management, and intelligent search. Built with MERN stack, it features JWT security, Cloudinary media handling, Redux state management, and Jest testing. A sleek Material UI design and data-driven dashboard enhance UX and business insights.`,
   },
   {
     id: 3,
     title: "Threads Clone with Real Time chat feature - Full Stack",
     img: "/threads.png",
-    link: "https://github.com/Akhilbabu456/_thread_clone_mern",
-    desc: `Overview: I cloned the popular meta app Threads, enhancing it with real-time chat and live video features. Utilized
-    MongoDB, Express.js, Node.js for backend, and React.js for dynamic UI. Integrated Chakra UI, JWT, Socket.io, Cron,
-    Recoil for smooth functionality, plus Cloudinary and ZEGO Cloud for media management and live streaming.
-     Key Features: Secure authentication, post management, user interaction, customizable UI, real-time chat, activity
-    tracking, live video calling`
+    link: "https://github.com/Akash4693/threads-clone",
+    desc: `Cloned and enhanced Meta's Threads with real-time chat and live video. Built with MongoDB, Express.js, Node.js, and React.js, leveraging Chakra UI, JWT, Socket.IO, Cron, and Recoil for seamless functionality. Integrated Cloudinary and ZEGO Cloud for media management and live streaming. Features include secure authentication, interactive posts, user engagement tools, real-time messaging, activity tracking, and high-quality live video calls.`,
   },
   {
     id: 4,
-    title: "BookMyFilm Movie Booking App - Full Stack",
-    img: "/movie.png",
-    link: "https://github.com/Akhilbabu456/_movie_booking_mern",
-    desc: `With BookMyFilm, users can easily view available shows and book tickets with the convenience of razorpay payment integration. 
-
-        But that's not all! Upon successful payment, users will receive an email with their booking details and a downloadable ticket in PDF format with a QR code.
-        
-        For added security, our sign up process includes email verification. A verification email with a link will be sent to the user's email ID, which expires in 30 seconds. Once verified, the account will be created.
-        `,
+    title: "Rhezo Food Ordering Platform - Full Stack",
+    img: "/Rhezo.png",
+    link: "https://github.com/Akash4693/rhezo",
+    desc: `Rhezo is a full-stack food ordering platform built with TypeScript, React.js, and Node.js. It features secure JWT authentication, real-time Stripe payments, automated email confirmations, and Cloudinary-powered image handling. A sleek ShadCN UI enhances UX, while the admin panel enables efficient restaurant and product management.`,
   },
   {
     id: 5,
-    title: "Medical Store Inventory Management - React.js",
-    img: "/medica.png",
-    link: "https://github.com/Akhilbabu456/_react_works/tree/main",
-    desc: `Medical store management website  React!  This website includes user authentication and features such as add, update, delete, and search for medical store inventory. 
-
-        Using React, I was able to design a user-friendly interface that allows store owners to easily manage their inventory. The user authentication feature ensures that only authorized personnel have access to sensitive information, providing an extra layer of security. 
+    title: "Finance",
+    img: "/finance.png",
+    link: "https://github.com/Akash4693/finance",
+    desc: `Experience a seamless way to track, analyze, and manage your finances with our advanced financial dashboard. Designed for precision and ease of use, it comes packed with features to give you full control over your financial data.
+         . Users can add transactions, toggle income and expenses, bulk delete and search records, and import CSV files all powered by Tanstack Query for seamless state management.
         `,
   },
 ];
@@ -62,10 +52,10 @@ const Single = ({ item }) => {
     <section className="portfolio">
       <div className="container">
         <div className="wrapper">
-            <div className="imageContainer" ref={ref}>
-          <img src={item.img} alt="" />
-            </div>
-          <motion.div className="textContainer" style={{y}}>
+          <div className="imageContainer" ref={ref}>
+            <img src={item.img} alt="" />
+          </div>
+          <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <a href={item.link}>See Demo</a>
